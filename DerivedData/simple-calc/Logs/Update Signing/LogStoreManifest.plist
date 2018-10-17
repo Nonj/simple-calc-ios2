@@ -5,6 +5,76 @@
 	<key>logFormatVersion</key>
 	<integer>9</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>2BE7A20A-39F3-48D8-9A73-0CEB9A8806D1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
+			<key>fileName</key>
+			<string>2BE7A20A-39F3-48D8-9A73-0CEB9A8806D1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>signature</key>
+			<string>Update Signing</string>
+			<key>timeStartedRecording</key>
+			<real>561418544.64479101</real>
+			<key>timeStoppedRecording</key>
+			<real>561418547.21174502</real>
+			<key>title</key>
+			<string>Update Signing</string>
+			<key>uniqueIdentifier</key>
+			<string>2BE7A20A-39F3-48D8-9A73-0CEB9A8806D1</string>
+		</dict>
+		<key>4BC0C81E-E385-40F0-843B-EB7281B880EC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
+			<key>fileName</key>
+			<string>4BC0C81E-E385-40F0-843B-EB7281B880EC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>signature</key>
+			<string>Update Signing</string>
+			<key>timeStartedRecording</key>
+			<real>561419985.87419796</real>
+			<key>timeStoppedRecording</key>
+			<real>561419987.00698805</real>
+			<key>title</key>
+			<string>Update Signing</string>
+			<key>uniqueIdentifier</key>
+			<string>4BC0C81E-E385-40F0-843B-EB7281B880EC</string>
+		</dict>
+		<key>EC582D1F-1333-4013-81B1-E65D538BA508</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
+			<key>fileName</key>
+			<string>EC582D1F-1333-4013-81B1-E65D538BA508.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>signature</key>
+			<string>Update Signing</string>
+			<key>timeStartedRecording</key>
+			<real>561418557.12012506</real>
+			<key>timeStoppedRecording</key>
+			<real>561418557.69955003</real>
+			<key>title</key>
+			<string>Update Signing</string>
+			<key>uniqueIdentifier</key>
+			<string>EC582D1F-1333-4013-81B1-E65D538BA508</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

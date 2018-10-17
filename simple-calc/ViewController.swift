@@ -84,6 +84,24 @@ class ViewController: UIViewController {
             fullEquationArr.removeLast()
         }
         print(fullEquationArr)
+        var endOfArr : Int = fullEquationArr.count - 1
+        var i : Int = 0
+        
+        while i < endOfArr {
+            print(i)
+            let charToProcess = fullEquationArr[i]
+            if charToProcess == "-" {
+                if i == 0 || (i > 0 && Int(fullEquationArr[i - 1]) == nil) {
+                    fullEquationArr[i+1] = charToProcess + fullEquationArr[i + 1]
+                    fullEquationArr.remove(at: i)
+                    endOfArr -= 1
+                    i -= 1
+                }
+            }
+            i += 1
+        }
+        print(fullEquationArr)
+        
         
         
         switch fullEquationArr[1] {

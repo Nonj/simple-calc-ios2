@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cVz-45-DPX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,216 +17,361 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eAL-ne-tbC">
-                                <rect key="frame" x="75" y="311" width="225" height="182"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Cog-lA-F47">
+                                <rect key="frame" x="74.5" y="191.5" width="226" height="284"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="aV5-40-2Jw">
-                                        <rect key="frame" x="0.0" y="0.0" width="225" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBq-1n-hh8" userLabel="txtDisplay">
+                                        <rect key="frame" x="0.5" y="0.0" width="225" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="9XJ-qd-27W">
+                                        <rect key="frame" x="0.5" y="59" width="225" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkM-zK-noZ">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkM-zK-noZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="0"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCq-vl-dmh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B6-GL-ts5">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B6-GL-ts5">
                                                 <rect key="frame" x="65" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="="/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFe-UT-yIS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z1-xA-Pcz">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z1-xA-Pcz">
                                                 <rect key="frame" x="130" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="/"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ycZ-5c-ysw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8L-fO-n3A">
                                                 <rect key="frame" x="195" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="%"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xb0-y4-JyW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="aV5-40-2Jw" secondAttribute="height" multiplier="15:2" id="AUp-7y-zMB"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="QiQ-Am-IhD">
-                                        <rect key="frame" x="0.0" y="38" width="225" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="GSc-6e-PEL">
+                                        <rect key="frame" x="0.5" y="98" width="225" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jj1-QL-UmF">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jj1-QL-UmF">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="7"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ImP-NB-Ooq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ej5-8X-8ua">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ej5-8X-8ua">
                                                 <rect key="frame" x="65" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="8"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vjh-pE-LD1"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNo-zz-uAn">
                                                 <rect key="frame" x="130" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="9"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpS-1P-eMU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PY-jY-YIw">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PY-jY-YIw">
                                                 <rect key="frame" x="195" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="*"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N5q-x4-c3B"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="QiQ-Am-IhD" secondAttribute="height" multiplier="15:2" id="I5q-N3-HoM"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="INh-Yg-aeu">
-                                        <rect key="frame" x="0.0" y="76" width="225" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="yjF-HR-Bm3">
+                                        <rect key="frame" x="0.5" y="137" width="225" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLo-SB-N91">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLo-SB-N91">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="4"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sE-PL-xLc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6H-2A-xz3">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6H-2A-xz3">
                                                 <rect key="frame" x="65" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="5"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aAQ-6G-nkn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLR-hq-gm0">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLR-hq-gm0">
                                                 <rect key="frame" x="130" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="6"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vR0-HB-44f"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o73-M6-HUl">
                                                 <rect key="frame" x="195" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="-"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7a-Q9-tZR"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="INh-Yg-aeu" secondAttribute="height" multiplier="15:2" id="TSd-Kw-NnT"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="qo0-i3-Hzx">
-                                        <rect key="frame" x="0.0" y="114" width="225" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="MN9-o8-nOn">
+                                        <rect key="frame" x="0.5" y="176" width="225" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ck6-xC-KKq">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ck6-xC-KKq">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="1"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FjE-tu-JCy"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0w-UK-y7K">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0w-UK-y7K">
                                                 <rect key="frame" x="65" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="2"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vuO-Rc-X3V"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFf-p6-48f">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFf-p6-48f">
                                                 <rect key="frame" x="130" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="3"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UM2-yO-gi9"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTd-nI-bc6">
                                                 <rect key="frame" x="195" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="+"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RV4-NM-wzJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="qo0-i3-Hzx" secondAttribute="height" multiplier="15:2" id="fut-11-Cse"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="BXM-q5-5pn">
-                                        <rect key="frame" x="0.0" y="152" width="225" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-cr-RH2">
+                                        <rect key="frame" x="0.0" y="215" width="226" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXr-VU-oZV">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXr-VU-oZV">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="fact"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URT-o8-89M"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-dH-Wur">
-                                                <rect key="frame" x="65" y="0.0" width="40" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-dH-Wur">
+                                                <rect key="frame" x="62" y="0.0" width="40" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="count"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yj6-Ya-lhg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyz-K3-ROM">
-                                                <rect key="frame" x="140" y="0.0" width="20" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyz-K3-ROM">
+                                                <rect key="frame" x="134" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="avg"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqU-7E-ZLN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPl-8g-8pU">
-                                                <rect key="frame" x="195" y="0.0" width="30" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPl-8g-8pU">
+                                                <rect key="frame" x="196" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="AC"/>
+                                                <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
                                                 <connections>
                                                     <action selector="btnPushedTrack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gSe-ZB-YWJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVS-bi-y8b">
+                                        <rect key="frame" x="88" y="254" width="50" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="History"/>
+                                        <variation key="widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
+                                        <connections>
+                                            <segue destination="Aaq-hD-tV3" kind="show" identifier="HistorySegue" id="pAQ-DI-nn9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="182" id="3yE-nE-TeH"/>
-                                    <constraint firstItem="INh-Yg-aeu" firstAttribute="width" secondItem="INh-Yg-aeu" secondAttribute="height" multiplier="15:2" id="Hmh-Gl-7Bf"/>
-                                    <constraint firstItem="QiQ-Am-IhD" firstAttribute="width" secondItem="QiQ-Am-IhD" secondAttribute="height" multiplier="15:2" id="X2W-Fh-1VN"/>
-                                    <constraint firstItem="aV5-40-2Jw" firstAttribute="width" secondItem="aV5-40-2Jw" secondAttribute="height" multiplier="15:2" id="bnc-3c-x17"/>
-                                    <constraint firstItem="BXM-q5-5pn" firstAttribute="width" secondItem="BXM-q5-5pn" secondAttribute="height" multiplier="15:2" id="ehL-ak-cPe"/>
-                                    <constraint firstAttribute="width" secondItem="eAL-ne-tbC" secondAttribute="height" multiplier="225:182" id="rlN-S1-syH"/>
-                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBq-1n-hh8" userLabel="txtDisplay">
-                                <rect key="frame" x="75" y="250" width="225" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eAL-ne-tbC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="68.5" id="Vmu-EO-caI"/>
-                            <constraint firstItem="eAL-ne-tbC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zuQ-Wp-DWu"/>
+                            <constraint firstItem="Cog-lA-F47" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mEJ-qC-CqY"/>
+                            <constraint firstItem="Cog-lA-F47" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFr-Il-TKj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oLc-cL-PPo"/>
                     <connections>
                         <outlet property="txtDisplay" destination="PBq-1n-hh8" id="5AY-W9-Sgt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="xXX-Sl-mmO">
+            <objects>
+                <viewController id="Aaq-hD-tV3" customClass="HistoryViewController" customModule="simple_calc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jzs-vQ-OUV" userLabel="HistoryView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbg-G5-as0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMU-an-JWK" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="998.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-BW-bsQ">
+                                                <rect key="frame" x="160" y="8" width="55" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-ui-8ec">
+                                                <rect key="frame" x="166" y="490" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h67-sJ-XmB">
+                                                <rect key="frame" x="187.5" y="880.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.5124974838971369" blue="0.5945769405104715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="h67-sJ-XmB" firstAttribute="top" secondItem="WTF-ui-8ec" secondAttribute="bottom" constant="392" id="27r-Vh-inK"/>
+                                            <constraint firstItem="NSH-BW-bsQ" firstAttribute="centerX" secondItem="BMU-an-JWK" secondAttribute="centerX" id="6eE-35-zbE"/>
+                                            <constraint firstItem="h67-sJ-XmB" firstAttribute="centerX" secondItem="BMU-an-JWK" secondAttribute="centerX" id="Kgi-ZF-Eiw"/>
+                                            <constraint firstAttribute="bottom" secondItem="h67-sJ-XmB" secondAttribute="bottom" constant="76" id="Od3-rm-ZeH"/>
+                                            <constraint firstItem="WTF-ui-8ec" firstAttribute="centerX" secondItem="BMU-an-JWK" secondAttribute="centerX" id="R7f-la-M8C"/>
+                                            <constraint firstItem="NSH-BW-bsQ" firstAttribute="top" secondItem="BMU-an-JWK" secondAttribute="top" constant="8" id="STv-cp-bLA"/>
+                                            <constraint firstItem="WTF-ui-8ec" firstAttribute="top" secondItem="NSH-BW-bsQ" secondAttribute="bottom" constant="460" id="iVk-Xh-xEN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17390137180000001" green="0.66666668650000005" blue="0.57742687690000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BMU-an-JWK" firstAttribute="width" secondItem="Hbg-G5-as0" secondAttribute="width" id="2xP-9q-p1u"/>
+                                    <constraint firstItem="BMU-an-JWK" firstAttribute="leading" secondItem="Hbg-G5-as0" secondAttribute="leading" id="CVz-YE-QNf"/>
+                                    <constraint firstAttribute="trailing" secondItem="BMU-an-JWK" secondAttribute="trailing" id="Tfd-hf-qh8"/>
+                                    <constraint firstItem="BMU-an-JWK" firstAttribute="height" secondItem="Hbg-G5-as0" secondAttribute="height" priority="250" id="hjK-i7-Tvw"/>
+                                    <constraint firstAttribute="bottom" secondItem="BMU-an-JWK" secondAttribute="bottom" constant="59" id="oKv-an-Xxq"/>
+                                    <constraint firstItem="BMU-an-JWK" firstAttribute="top" secondItem="Hbg-G5-as0" secondAttribute="top" id="qiC-HX-GCi"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hbg-G5-as0" firstAttribute="bottom" secondItem="1AJ-GF-uK1" secondAttribute="bottom" constant="64" id="CQg-93-j7i"/>
+                            <constraint firstItem="Hbg-G5-as0" firstAttribute="width" secondItem="Jzs-vQ-OUV" secondAttribute="width" id="NVj-4K-Jjy"/>
+                            <constraint firstItem="Hbg-G5-as0" firstAttribute="top" secondItem="1AJ-GF-uK1" secondAttribute="top" id="Wng-oR-11b"/>
+                            <constraint firstItem="Hbg-G5-as0" firstAttribute="leading" secondItem="1AJ-GF-uK1" secondAttribute="leading" id="d8w-0f-Lzo"/>
+                            <constraint firstItem="Hbg-G5-as0" firstAttribute="height" secondItem="Jzs-vQ-OUV" secondAttribute="height" id="gud-kI-Hdo"/>
+                            <constraint firstItem="1AJ-GF-uK1" firstAttribute="trailing" secondItem="Hbg-G5-as0" secondAttribute="trailing" id="rgj-gZ-bSd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1AJ-GF-uK1"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="scrollView" destination="BMU-an-JWK" id="pQA-fu-Mhm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4f-8y-W1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805.5999999999999" y="132.23388305847078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NdZ-cJ-23Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cVz-45-DPX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k8o-ZA-Gwn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1nJ-v7-sIf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lej-0A-MYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>

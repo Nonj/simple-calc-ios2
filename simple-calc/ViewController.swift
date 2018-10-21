@@ -9,10 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var historyOfInputs : [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBOutlet weak var txtDisplay: UILabel! // UI Label Reference
@@ -20,37 +20,48 @@ class ViewController: UIViewController {
     @IBAction func btnPushedTrack(_ sender: Any) {
         
         let input : String = (sender as AnyObject).titleLabel!.text!
+        var historyEq : String = ""
         
         switch input {
         case "=":
+            
             let userInputArr : [String] = processEquation(userString: txtDisplay.text!)
+                historyEq = txtDisplay.text! + " = "
             
             switch userInputArr[userInputArr.count - 1] {
             case "avg":
                 let result : Int = avg(nums: userInputArr)
+                historyEq += String(result)
                 txtDisplay.text = String(result)
                 break
             case "count":
                 let result : Int = count(nums: userInputArr)
+                historyEq += String(result)
                 txtDisplay.text = String(result)
                 break
             case "fact":
                 let result : Int = fact(nums: userInputArr)
+                historyEq += String(result)
                 txtDisplay.text = String(result)
             case "+":
                 let result : Int = add(nums: userInputArr)
+                historyEq += String(result)
                 txtDisplay.text = String(result)
             case "-":
                 let result : Int = sub(nums: userInputArr)
+                historyEq += String(result)
                 txtDisplay.text = String(result)
             case "*":
                 let result : Int = mul(nums: userInputArr)
+                historyEq += String(result)
                 txtDisplay.text = String(result)
             case "/":
                 let result : Int = div(nums: userInputArr)
+                historyEq += String(result)
                 txtDisplay.text = String(result)
             case "%":
                 let result : Int = mod(nums: userInputArr)
+                historyEq += String(result)
                 txtDisplay.text = String(result)
                 
             default:
@@ -67,6 +78,21 @@ class ViewController: UIViewController {
                 txtDisplay.text = txtDisplay.text! + " " + input + " "
             }
         }
+        
+        if historyEq != "" {
+            self.historyOfInputs.append(historyEq)
+        }
+        
+    }
+    
+    // Function to pass on data from one storyboard to another
+    // Passes array of input strings.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HistorySegue" {
+            let secondVC = segue.destination as! HistoryViewController
+            secondVC.stringOfInputs = self.historyOfInputs
+
+        }
     }
     
     // Processes user input
@@ -74,7 +100,7 @@ class ViewController: UIViewController {
         var processedStringArr : [String] = []
         
         var fullEquationArr : [String] = userString.components(separatedBy: " ")
-        print(fullEquationArr)
+
         
         if fullEquationArr[0] == "" {
             fullEquationArr.removeFirst()
@@ -83,12 +109,12 @@ class ViewController: UIViewController {
         if fullEquationArr[fullEquationArr.count-1] == "" {
             fullEquationArr.removeLast()
         }
-        print(fullEquationArr)
+
         var endOfArr : Int = fullEquationArr.count - 1
         var i : Int = 0
         
         while i < endOfArr {
-            print(i)
+
             let charToProcess = fullEquationArr[i]
             if charToProcess == "-" {
                 if i == 0 || (i > 0 && Int(fullEquationArr[i - 1]) == nil) {
@@ -100,7 +126,7 @@ class ViewController: UIViewController {
             }
             i += 1
         }
-        print(fullEquationArr)
+
         
         
         

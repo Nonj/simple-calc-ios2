@@ -28,10 +28,10 @@ depends-top-level:
 - !private "AnyObject"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "FloatLiteralType"
+- !private "FloatLiteralType"
 - !private "HistoryViewController"
 - "Int"
-- "IntegerLiteralType"
+- !private "IntegerLiteralType"
 - "String"
 - !private "StringLiteralType"
 - "TernaryPrecedence"
@@ -368,7 +368,6 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "mod"]
 - ["So8NSObjectC", "mul"]
-- ["So8NSObjectC", "numLabels"]
 - ["So8NSObjectC", "prepare"]
 - ["So8NSObjectC", "processEquation"]
 - !private ["So8NSObjectC", "stride"]
@@ -553,7 +552,6 @@ depends-member:
 - !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "mod"]
 - ["So11UIResponderC", "mul"]
-- ["So11UIResponderC", "numLabels"]
 - ["So11UIResponderC", "prepare"]
 - ["So11UIResponderC", "processEquation"]
 - !private ["So11UIResponderC", "stride"]
@@ -667,7 +665,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "mod"]
 - ["So16UIViewControllerC", "mul"]
-- ["So16UIViewControllerC", "numLabels"]
 - ["So16UIViewControllerC", "prepare"]
 - ["So16UIViewControllerC", "processEquation"]
 - !private ["So16UIViewControllerC", "stride"]
@@ -692,7 +689,6 @@ depends-member:
 - ["11simple_calc14ViewControllerC", "init"]
 - ["11simple_calc14ViewControllerC", "mod"]
 - ["11simple_calc14ViewControllerC", "mul"]
-- ["11simple_calc14ViewControllerC", "numLabels"]
 - ["11simple_calc14ViewControllerC", "prepare"]
 - ["11simple_calc14ViewControllerC", "processEquation"]
 - !private ["11simple_calc14ViewControllerC", "stride"]
@@ -885,4 +881,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d91fadaa78c87eb4d2a1d6936c314de0"
+interface-hash: "5c5ae66ed634a017259d9d1017f6d134"

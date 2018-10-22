@@ -26,7 +26,7 @@ class HistoryViewController: UIViewController {
     func createLabels() {
         for text in stringOfInputs {
             
-            let lbl = UILabel(frame: CGRect(x: 30, y: 50 + (25 * numLabels), width: 345, height: 17))
+            let lbl = UILabel(frame: CGRect(x: 30, y: 50 + (34 * numLabels), width: 345, height: 25))
             
             lbl.text = text
             
@@ -34,7 +34,7 @@ class HistoryViewController: UIViewController {
             
             lbl.backgroundColor = .black
             
-            lbl.font = UIFont.systemFont(ofSize: 17)
+            lbl.font = UIFont.systemFont(ofSize: 25)
             
             lbl.numberOfLines = 0
             

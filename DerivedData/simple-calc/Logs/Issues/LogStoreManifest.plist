@@ -29,6 +29,29 @@
 			<key>uniqueIdentifier</key>
 			<string>518400C9-8DE2-4C55-A4E6-AF6D7D30B380</string>
 		</dict>
+		<key>881805A8-6644-4D7F-B9F5-319130C1E543</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>881805A8-6644-4D7F-B9F5-319130C1E543.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>signature</key>
+			<string>simple-calc-gwknalbmvwzshdgglxovuoklbyfy</string>
+			<key>timeStartedRecording</key>
+			<real>561961487.19882202</real>
+			<key>timeStoppedRecording</key>
+			<real>561961503.79904699</real>
+			<key>title</key>
+			<string>Build target simple-calc</string>
+			<key>uniqueIdentifier</key>
+			<string>881805A8-6644-4D7F-B9F5-319130C1E543</string>
+		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
 	<true/>
